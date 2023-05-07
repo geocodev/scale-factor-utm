@@ -20,3 +20,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Run flake8
+      run: |
+        flake8 --exclude .venv --max-line-length=100
